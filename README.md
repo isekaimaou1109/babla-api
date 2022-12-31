@@ -14,3 +14,4 @@ console.log(bablaApi.verbTable('verbessern'))
 ```
 
 ### **Wenn** du dieses Projekt **magst**, gibst du mir **einen Star** ###
+### Viele Grüße Tonii ###
