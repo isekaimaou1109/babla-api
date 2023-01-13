@@ -1,0 +1,26 @@
+{
+  "name": "babla-api",
+  "version": "1.0.0",
+  "description": "Dieses Projekt ist nur für BABLA API-Übersetzerung",
+  "main": "index.js",
+  "author": "Toniiiii",
+  "scripts": {
+    "clean": "prettier --write index.js",
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": ["babla", "babla-api", "deutschkenntnisse", "verben"],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:isekaimaou1109/babla-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isekaimaou1109/babla-api/issues"
+  },
+  "homepage": "https://github.com/isekaimaou1109/babla-api#readme"
+}
