@@ -7,7 +7,7 @@ class Babla {
   /** CONSTANT MESSAGE VARIABLES FOR ERROR */
   #CANNOT_FIND_WORD; #PHASE_NOT_FOUND;
 
-  #baseUrl; #urlForBeispiel; #data;
+  #baseUrl; #data;
 
   constructor() {
     this.#baseUrl = 'https://www.babla.vn/dong-tu/tieng-duc/'
