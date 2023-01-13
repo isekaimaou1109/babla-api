@@ -11,7 +11,6 @@ class Babla {
 
   constructor() {
     this.#baseUrl = 'https://www.babla.vn/dong-tu/tieng-duc/'
-    this.#urlForBeispiel = 'https://de.bab.la/beispiele/deutsch/'
     this.#data = {}
     this.#CANNOT_FIND_WORD = 'Wir können nicht das Wort finden!'
     this.#PHASE_NOT_FOUND = 'This phase cannot be found!'
@@ -80,10 +79,6 @@ class Babla {
       }
       return this.#PHASE_NOT_FOUND
     }
-  }
-
-  async getExamples(verben) {
-    const response = await axios.get(`${this.#urlForBeispiel}${verben}`)
   }
 }
 
