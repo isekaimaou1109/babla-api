@@ -5,7 +5,7 @@ const axios = require('axios').default
 
 class Babla {
   /** CONSTANT MESSAGE VARIABLES FOR ERROR */
-  #CANNOT_FIND_WORD; #PHASE_NOT_FOUND;
+  #CANNOT_FIND_WORD; #PHRASE_NOT_FOUND;
 
   #baseUrl; #data;
 
@@ -13,7 +13,7 @@ class Babla {
     this.#baseUrl = 'https://www.babla.vn/dong-tu/tieng-duc/'
     this.#data = {}
     this.#CANNOT_FIND_WORD = 'Wir können nicht das Wort finden!'
-    this.#PHASE_NOT_FOUND = 'This phase cannot be found!'
+    this.#PHRASE_NOT_FOUND = 'This phrase cannot be found!'
   }
 
   #t(title) {
@@ -75,9 +75,11 @@ class Babla {
     } else {
       let isIncluded = Object.keys(this.#data).indexOf(tmp) !== -1
       if (isIncluded) {
-        return JSON.stringify(this.#data[tmp], null, 2)
+        return JSON.stringify({
+          [tmp]: this.#data[tmp]
+        }, null, 2)
       }
-      return this.#PHASE_NOT_FOUND
+      return this.#PHRASE_NOT_FOUND
     }
   }
 }
